@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @media(max-width: 760px) {
+                .product-title {
+                    height: 2.5em !important;
+                }
+            }
+
+            @media(max-width: 900px) {
+                .product {
+                    height: 19em !important;
+                }
+
+                #nav-links {
+                    flex-direction: column;
+                }
+
+                .information {
+                    padding-top: 6em !important;
+                }
+            }
+
+            @media(max-width: 950px) {
+                .product-description {
+                   padding: 0 0 0 0 !important;
+                   font-size: 11pt !important;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            body {
+                width: 100%;
+                min-width: 500px;
+                height: 100%;
+                color: rgb(70, 70, 70);
+                text-align: center;
+                font-family: Tahoma, sans-serif;
+                font-size: 16pt;
+                background: white;
+                /*
+                background: #008871;
+                font-weight: 300;*/
+            }
+
+            header {
+                padding-left: 50px;
+                width: 100%;
+                display: flex;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                align-items: center;
+                background: #EA006F;
+                color: white;
+            }
+
+            h3 {
+                margin-bottom: 0;
+                text-align: left;
+            }
+
+            li {
+                display: inline-block;
+            }
+
+            .highlight {
+                display: flex;
+                width: 60vw;
+                margin: auto;
+            }
+
+            .information {
+                padding-top: 3em;
+                display: block;
+            }
+
+            .desc-text {
+                min-width: 300px;
+                width: 60vw;
+                margin: auto;
+                text-align: left;
+            }
+
+            .product {
+                width: 22vw;
+                min-width: calc(500px/4);
+                height: 17em;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                position: relative;
+                z-index: -1;
+                background: rgba(173, 216, 230, 0.13);
+                color: black;
+            }
+
+            .product-description {
+                font-size: 12pt;
+                padding: 0 1.5em 0 1.5em;
+            }
+
+            .product-price {
+                font-weight: 700;
+                font-size: 18pt;
+            }
+
+            .product-title {
+                padding: 1em 0 1em 0;
+                background: #020257;
+                color: white;
+                background-size: 2em 2em;
+                margin-top: 0;
+                text-align: center;
+                font-size: 14pt;
+            }
+
+            .store-front {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .aba-btn {
+                position: absolute;
+                height: 2em;
+                width: 7em;
+                background: #1C1CDA;
+                color: white;
+                font-size: 14pt;
+                bottom: 0;
+                left: 50%;
+                bottom: 1em;
+                margin-left: -3.5em;
+                border: 2px solid transparent;
+                border-radius: 5px;
+            }
+
+            .signup-btn {
+                background: #1C1CDA;
+                color: white;
+                font-size: 14pt;
+                border: 2px solid transparent;
+                border-radius: 5px;
+            }
+
+            #company-name {
+                width: 30vw;
+                text-align: left;
+                padding-left: .5em;
+            }
+
+            #header-img {
+                display: inline-block;
+                width: 30px;
+                background: white;
+                border: .1em solid black;
+                border-radius: 50%;
+            }
+
+            #logo {
+                width: 50%;
+            }
+
+            #nav-bar {
+                width: 100%;
+            }
+
+            #nav-links {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            #products {
+                margin: 0 10vw 0 10vw;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+        </script>
+        <header id="header">
+            <img id="header-img" src="https://icon-library.net/images/abacus-icon/abacus-icon-5.jpg">
+            <p id="company-name">Abacus-abra</p>
+            <nav id="nav-bar">
+                <ul id="nav-links">
+                    <li><a href="#purpose" class="nav-link">Purpose</a></li>
+                    <li><a href="#offer" class="nav-link">What we offer</a></li>
+                    <li><a href="#sign-up" class="nav-link">Sign-up</a></li>
+                    <li><a href="#how-to" class="nav-link">Learn to use</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="information" id="purpose">
+            <div>
+                <h2>Why get an abacus?</h2>
+                <p class="desc-text">Do you need to upgrade your counting capabilities? Do you need to count in bases other than base 10? Than the abacus is here to help you. 
+                    Estitmated to be used by ancient civilization since about 400 B.C., the abacus is an upgrade to the digits on the hands used by most people for counting.
+                    Here at Abacus-Abra we strive to bring you the greatest abacus devices using the best modern techniques and materials.
+                </p>
+            </div>
+            <div id="offer">
+                <h2>What we offer</h2>
+                <div class="highlight">
+                    <a href="https://icon-library.net/icon/shipping-icon-png-0.html" title="Shipping Icon Png #426442"><img src="https://icon-library.net//images/shipping-icon-png/shipping-icon-png-0.jpg" width="50" /></a>
+                    <h3 style="padding-left: 1em">Free Shipping</h3>
+                </div>
+                    <p class="desc-text">Here at Abacus-Abra, we believe that the quality of our products extends to the moment it arrives in your hands. As such, Abacus-Abra uses our in house delivery service to ensure that each abacus arrives in optimal condition.</p>
+                <div style="padding-top: 2em" class="highlight">
+                    <a href="https://icon-library.net/0ac1edac9c.svg.html" title="Font,Text,Line,Logo,Trademark,Parallel,Brand,Graphics,Symbol,Clip art # 25740"><img src="https://icon-library.net/images/0ac1edac9c.svg.svg" width="50" /></a>
+                    <h3 style="padding-left: 1em">Lifetime Product Warranty</h3>
+                </div>
+                    <p class="desc-text">When you purchase one of our abaci, you will get a lifetime warranty with the product that you purchase. If you find any defects or if your abacus gets damaged, we will give you a replacement after you contact us.</p>
+            </div>
+            <div id="sign-up">
+                <h2>Sign-up</h2>
+                <p class="desc-text">Are you interested in learning more about our products? Than take a second to sign up to get emails about new product releases.</p>
+                <form style="padding-top: 1em;" id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input name="email" id="email" type="email" placeholder="Enter your email" required>
+                    <input class="signup-btn" id="submit" type="submit" value="Sign Up">
+                </form>
+            </div>
+            <div id="how-to"> 
+                <h2>Learn how to use an abacus</h2>
+                <p style="padding-bottom: 2em" class="desc-text">Here is short video that teaches how to use an abacus:</p>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/SYRyKYmOJwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="products">
+                <h2 style="display: block">Products</h2>
+                <div class="store-front">
+                    <div class="product">
+                        <h3 class="product-title">Children's Abacus</h3>
+                        <p class="product-price">$30</p>
+                        <p class="product-description">An abacus that is colorful and sturdy used to teach children the amazing features of the abacus.</p>
+                        <button class="aba-btn" type="submit">Purchase</button>
+                    </div>
+                    <div class="product">
+                        <h3 class="product-title">Standard Abacus</h3>
+                        <p class="product-price">$65</p>
+                        <p class="product-description">An abacus with a high quality frame made of cherry wood and with copper bars. This abacus is designed to handle and counting needs that you may have.</p>
+                        <button class="aba-btn" type="submit">Purchase</button>
+                    </div>
+                    <div class="product">
+                        <h3 class="product-title">The Grand Abacus</h3>
+                        <p class="product-price">$80</p>
+                        <p class="product-description">Our best handcrafted abacus. The frame is made from ebony wood inlaid with gold metal decorations. This abacus is certain to solve all your calculation needs.</p>
+                        <button class="aba-btn" type="submit">Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
